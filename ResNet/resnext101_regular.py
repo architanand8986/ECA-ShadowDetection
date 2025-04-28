@@ -1,7 +1,7 @@
 import torch
 from torch import nn
 
-from resnext import resnext_101_32x4d_
+from ResNet import resnext_101_32x4d_
 resnext_101_32_path = 'resnext_101_32x4d.pth'
 
 
