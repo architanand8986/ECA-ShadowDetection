@@ -3,7 +3,7 @@ import os
 from PIL import Image
 import torch.utils.data as data
 resnext_101_32_path = 'resnext_101_32x4d.pth'
-training_root = './data/trainISTD'
+training_root = '/kaggle/input/istd-dataset/ISTD_Dataset'
 
 def make_dataset(root):
     img_list = [os.path.splitext(f)[0] for f in os.listdir(os.path.join(root, 'image')) if f.endswith('.png')]
